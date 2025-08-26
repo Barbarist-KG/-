@@ -1,0 +1,41 @@
+body, html {
+  margin:0; padding:0;
+  background:#111;
+  display:flex; justify-content:center; align-items:center;
+  height:100vh; color:#ddd; font-family:Arial,sans-serif;
+}
+canvas {
+  background:#222;
+  border:2px solid #555;
+  display:block;
+}
+
+#achievementsList {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #ccc;
+  font-size: 14px;
+  max-width: 150px;
+}
+#achievementsList li {
+  margin: 5px 0;
+}
+#achievementsList li.unlocked {
+  color: #0f0;
+  font-weight: bold;
+}
+button{
+    border: 3px solid #484444;
+  border-radius: 14px;
+  padding: 10px 14px;
+  font-size: 16px;
+  cursor: pointer;
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  color: #ffffff;
+  box-shadow: 4px 4px 0 rgba(255, 255, 255, 0.2);
+  transition: transform 0.05s;
+}

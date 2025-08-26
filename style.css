@@ -1,0 +1,88 @@
+/* ======================= style.css ======================= */
+:root {
+  --bg: #fffdf2;
+  --ink: #111;
+  --accent: #ff7aa2;
+  --accent2: #7af0ff;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  font-family: system-ui, -apple-system, "Comic Sans MS", "Segoe UI", Roboto,
+    sans-serif;
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrap {
+  width: min(720px, 96vw);
+  padding: 14px;
+  box-sizing: border-box;
+}
+.card {
+  background: #fff;
+  border: 3px dashed #000;
+  border-radius: 24px;
+  box-shadow: 8px 8px 0 #0002;
+  padding: 16px;
+  position: relative;
+}
+h1 {
+  margin: 0 0 10px;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+p {
+  margin: 6px 0;
+}
+.row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+button {
+  border: 3px solid #000;
+  border-radius: 14px;
+  padding: 10px 14px;
+  font-size: 16px;
+  cursor: pointer;
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  color: #000;
+  box-shadow: 4px 4px 0 #0003;
+  transition: transform 0.05s;
+}
+button:active {
+  transform: translateY(2px);
+}
+.scr {
+  font-weight: 700;
+  padding: 4px 10px;
+  border: 3px dotted #000;
+  border-radius: 12px;
+  background: #fff6;
+}
+canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  image-rendering: pixelated;
+  background: #f7f7f7;
+  border-radius: 16px;
+  border: 2px solid #000;
+}
+.tip {
+  font-size: 13px;
+  opacity: 0.8;
+}
+.footer {
+  font-size: 12px;
+  opacity: 0.6;
+  text-align: right;
+  margin-top: 6px;
+}

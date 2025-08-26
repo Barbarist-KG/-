@@ -1,0 +1,43 @@
+<!-- Проект разделён на 3 файла: index.html, style.css, game.js -->
+<!-- Скопируй каждый блок в одноимённый файл -->
+
+<!-- ======================= index.html ======================= -->
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ЛОВИ КРУГ — супер‑простая игра</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>🎯 ЛОВИ КРУГ</h1>
+      <p>Кликай по бегающему кружку. За 30 секунд набери как можно больше очков. Всё максимально просто!</p>
+      <div class="row" style="justify-content:space-between;">
+        <div class="row">
+          <button id="btnStart">Старт / заново</button>
+          <a href="./dum/2index.html">
+            <button id="btn2game">2-игра</button>
+          </a>
+          <a href="./змейка/index.html"><button>3-игра</button></a>
+        </div>
+        <div class="row">
+          <div class="scr">Очки: <span id="score">0</span></div>
+          <div class="scr">Время: <span id="time">30.0</span>с</div>
+        </div>
+      </div>
+
+      <canvas id="game" width="640" height="420"></canvas>
+      <p class="tip">Подсказка: попадай точно в круг. Каждый раз он ускоряется чуточку сильнее. На телефоне — просто тапай по полотну.</p>
+      <div class="footer">Сделано предельно «непрофессионально» и мило :)</div>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
+
+
+
