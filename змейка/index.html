@@ -302,18 +302,7 @@
             // Обновляем активную кнопку
             document.querySelectorAll('.game-btn').forEach(btn => btn.classList.remove('active'));
             document.querySelectorAll('.game-btn')[gameNumber - 1].classList.add('active');
-            
-            currentGame = gameNumber;
-            
-            if (gameNumber === 1) {
-                document.getElementById('gameTitle').textContent = '🐍 Классическая змейка';
-                gameSpeed = 150;
-            } else {
-                document.getElementById('gameTitle').textContent = '⚡ Скоростная змейка';
-                gameSpeed = 80;
-            }
-            
-            restartGame();
+
         }
 
         // Перезапуск игры
